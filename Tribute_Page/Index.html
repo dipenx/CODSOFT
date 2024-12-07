@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute to Pandit Raghunath Murmu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Honoring the Legacy of Pandit Raghunath Murmu</h1>
+    <p>Born: May 5, 1905 - Passed Away: February 1, 1982</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#aboutraghunathmurmu">About Raghunath Murmu</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#photos">Photos</a>
+    <a href="#tribute-wall">Tribute Wall</a>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <img src="Raghunath_Murmu.jpg" alt="Pandit Raghunath Murmu">
+      <button>Send a Tribute</button>
+    </div>
+
+    <div class="main-content">
+      <div id="aboutraghunathmurmu" class="tab-content active">
+        <h2>About Guru Gomkey</h2>
+        <p>
+          Pandit Raghunath Murmu,also known as 'Guru Gomkey' a visionary linguist, social reformer, and cultural icon, is celebrated as the creator of the Ol Chiki script for the Santali language. His pioneering work in the preservation and promotion of Santali culture and literature has left an enduring legacy.
+        </p>
+        <p>
+          Born on May 5, 1905, in Dandbose, Odisha, Pandit Murmu sought to give the Santali language its own identity. Through the Ol Chiki script, he enabled the Santali community to record its oral traditions, literature, and cultural heritage. He dedicated his life to education, social upliftment, and the empowerment of indigenous communities.
+        </p>
+      </div>
+
+      <div id="achievements" class="tab-content">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Developed the Ol Chiki script in 1925, giving the Santali language its unique written form.</li>
+          <li>Authored numerous books and plays, including *Kherwal Bir*, *Darege Dhan*, and *Bidhu Chandan*, to promote Santali literature.</li>
+          <li>Worked tirelessly to integrate Santali culture into mainstream education and recognition.</li>
+          <li>Advocated for the social and economic upliftment of the Santali community.</li>
+          <li>Inspired generations to embrace their cultural identity and language with pride.</li>
+        </ul>
+      </div>
+
+      <div id="photos" class="tab-content">
+        <h2>Photos</h2>
+        <p>Explore Guru Gomkey's invention:</p>
+        <div class="photo-section">
+          <img src="photo_3.png" alt="Pandit Murmu teaching Ol Chiki script">
+          <img src="phoro_2.jpg" alt="Pandit Murmu at a cultural event">
+          <img src="photo_1.jpg" alt="Pandit Murmu's legacy in Santali culture">
+        </div>
+      </div>
+
+      <div id="tribute-wall" class="tab-content">
+        <h2>Tribute Wall</h2>
+        <p>"Pandit Murmu, you gave us a voice and preserved our heritage. Thank you for your vision." - A Grateful Santali Speaker</p>
+        <p>"Your work in creating the Ol Chiki script is an inspiration for generations." - A Language Enthusiast</p>
+        <p>"You are the torchbearer of Santali culture and pride. Your legacy is eternal." - A Community Leader</p>
+        <p>"Through Ol Chiki, you united us. Thank you, Pandit Murmu, for empowering our language." - An Admirer</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy;Copyright © <a href="https://www.linkedin.com/in/dipenmajhi/" target="_blank" class="profile-link">Dipen Majhi</a> 2024 | All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        document.querySelector(this.getAttribute('href')).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
